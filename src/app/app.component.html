@@ -1,0 +1,11 @@
+
+
+<!-- <h1>Parent Component</h1>
+<p>Message: {{message }}</p>
+<app-childcomponent [childMessage]="message"></app-childcomponent> -->
+<div>
+    <h2>Item List</h2>
+    <ul>
+        <app-childcomponent *ngFor=" let Item of itemList; let index =index" [item]="Item" (itemDone)="markItemAsDone(index)"> </app-childcomponent>
+    </ul>
+</div>

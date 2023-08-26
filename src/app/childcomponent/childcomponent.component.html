@@ -1,0 +1,9 @@
+<!-- <h2>Child Component</h2>
+<p>Message from parent: {{ childMessage }}</p> -->
+
+<li>
+    <span>{{item.text}}</span>
+    <button *ngIf="!item.done" (click)="markDone()">Mark Done </button>
+    <span *ngIf="item.done">Done</span>
+</li>
+
